@@ -69,11 +69,11 @@ public class UserService {
 
 
         User adminUser = new User();
-        adminUser.setUserName("admin123");
-        adminUser.setPassword(getEncodedPassword("admin@pass"));
-        adminUser.setUserFirstName("admin");
-        adminUser.setUserLastName("admin");
-        adminUser.setEmail("admin@gmail.com");
+        adminUser.setUserName("fahad");
+        adminUser.setPassword(getEncodedPassword("fahad@ashtana"));
+        adminUser.setUserFirstName("fahad");
+        adminUser.setUserLastName("sheikh");
+        adminUser.setEmail("fahad@gmail.com");
         adminUser.setDateCreated(OffsetDateTime.now());
         adminUser.setLastUpdated(OffsetDateTime.now());
 
