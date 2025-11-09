@@ -83,6 +83,11 @@ public class User {
         this.accountNonLocked = true;
     }
 
+    // Add this field to the User class
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @JsonManagedReference
+    private List<Address> addresses;
+
     // Remove @PrePersist and @PreUpdate since you're using @EnableJpaAuditing
     @PrePersist
     void createdAt() {
